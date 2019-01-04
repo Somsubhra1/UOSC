@@ -3,6 +3,7 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-y: visible;
     background: #d6d6d6;
 }
 
@@ -13,7 +14,6 @@ html,body{
     padding: 0;
     position: relative;
     background: #000;
-    overflow: hidden;
 }
 
 .swiper-container{
@@ -127,10 +127,11 @@ span,p{
 }
 
 .what-next{
-    display: block;
+    display: inline-block;
     width: 100%;
+    margin-top: 5%;
     text-align: center;
-    font-size: 76px;
+    font-size: 3.5rem;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;      
@@ -138,7 +139,7 @@ span,p{
 
 .register-div{
     position:absolute;
-    top:25%;
+    top:30%;
     left:12.5%;
     width:30%;
     padding: 2.5%;
@@ -150,7 +151,7 @@ span,p{
 
 .gallery-div{
     position:absolute;
-    top:35%;
+    top:45%;
     left:52.5%;
     width:30%;
     padding: 2.5%;
@@ -214,3 +215,38 @@ span,p{
 }
 
 
+
+
+
+/* Media Queries */
+
+/* @media screen and (max-width:) */
+
+@media screen and (max-width:1050px){
+    .what-next{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width:768px){
+    
+    .register-div, .gallery-div{
+        width: 75%;
+        height: 40%;
+        left: 12.5%;
+    }
+    .container-main{overflow-y:scroll;}
+    .gallery-div{margin-top: 2%;top: 75%;}
+
+    .slide-content{
+        left: 10%;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .what-next{
+        margin-top: 20%;
+        font-size: 2.6rem;
+    }
+}
