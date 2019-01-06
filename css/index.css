@@ -3,7 +3,6 @@ html,body{
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-y: visible;
     background: #d6d6d6;
 }
 
@@ -237,7 +236,7 @@ span,p{
         font-size: 14px;
     }
 
-    .register-div{top:20%;}
+    .register-div{top:25%;}
 
     .gallery-div{
         top: 50%;
