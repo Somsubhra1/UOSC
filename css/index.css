@@ -231,15 +231,15 @@ span,p{
     
     .register-div, .gallery-div{
         width: 75%;
-        height: 24%;
+        height: 27%;
         left: 12.5%;
         font-size: 14px;
     }
 
-    .register-div{top:25%;}
+    .register-div{top:30%;}
 
     .gallery-div{
-        top: 50%;
+        top: 60%;
     }
 
     .slider-content{
