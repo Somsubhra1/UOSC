@@ -232,7 +232,7 @@ span,p{
     
     .register-div, .gallery-div{
         width: 75%;
-        height: 20%;
+        height: 24%;
         left: 12.5%;
         font-size: 14px;
     }
@@ -265,8 +265,8 @@ span,p{
     .slider-content p{
         font-size: 14px;
     }
-    .register-div, .gallery-div{
-        height: 24%;
+    .slider-content-1 {
+        top: 18%;
     }
 }
 
