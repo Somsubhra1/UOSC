@@ -228,19 +228,28 @@ span,p{
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:769px){
     
     .register-div, .gallery-div{
         width: 75%;
-        height: 40%;
+        height: 20%;
         left: 12.5%;
+        font-size: 14px;
     }
-    .container-main{overflow-y:scroll;}
-    .gallery-div{margin-top: 2%;top: 75%;}
 
-    .slide-content{
-        left: 10%;
+    .gallery-div{
+        top: 60%;
     }
+
+    .slider-content{
+        left: 15%;
+    }
+    
+    .slider-content span{
+        font-size: 3rem;
+    }
+
+    .container-main{overflow-y:scroll;}
     
 }
 
@@ -248,5 +257,27 @@ span,p{
     .what-next{
         margin-top: 20%;
         font-size: 2.6rem;
+    }
+    .slider-content p{
+        font-size: 14px;
+    }
+    .register-div, .gallery-div{
+        height: 24%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .gallery-div, .register-div{
+        font-size: 12px;
+    }
+    .slider-content-1 span{
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 340px){
+
+    .slider-content-1 span{
+        font-size: 3rem;
     }
 }
