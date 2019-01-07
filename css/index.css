@@ -83,7 +83,7 @@ span,p{
     padding: 10px;
     color: #fff;
     position: relative;
-    top: 25%;
+    top: 35%;
     left: 10%;
 }
 
@@ -105,7 +105,7 @@ span,p{
     /* background: #000; */
     position: relative;
     top: 25%;
-    left: 5%;
+    left: 10%;
     color: #fff;
 }
 
@@ -239,7 +239,7 @@ span,p{
     .register-div{top:30%;}
 
     .gallery-div{
-        top: 60%;
+        top: 63%;
     }
 
     .slider-content{
@@ -251,8 +251,6 @@ span,p{
     .slider-content span{
         font-size: 3rem;
     }
-
-    .container-main{overflow-y:scroll;}
     
 }
 
