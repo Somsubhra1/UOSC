@@ -20,6 +20,7 @@ body {
 }
 #registrationForm > button {
   display: flex;
+  border-radius: 20px;
 }
 hr {
   background-color: #fff;
