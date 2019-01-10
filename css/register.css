@@ -29,13 +29,14 @@ hr {
 }
 .head {
   margin-top: 7rem;
-  font-size: 4.4rem;
+  font-size: 4.1rem;
   font-family: "Francois One", sans-serif;
   color: #fff;
 }
 .jumbotron {
   padding-top: 40px;
   padding-bottom: 30px;
+  border-radius: 4.5rem;
 }
 .form-group > input {
   border-radius: 20px;
