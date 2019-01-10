@@ -55,9 +55,13 @@ hr{background: #000;}
     height: 102%;
     overflow: hidden;
     border-radius: 12px 12px 0px 0px;
-    background: #0575E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: #0575E6; 
+     background: -webkit-linear-gradient(to left, #021B79, #0575E6);
+     background: linear-gradient(to left, #021B79, #0575E6); */
+
+    background: #bdc3c7;   
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
 }
 
 .contact-img{
@@ -157,7 +161,6 @@ hr{background: #000;}
     display: none;
 }
 
-
 .footer{
     width: 80%;
     height: 20%;
@@ -184,10 +187,8 @@ hr{background: #000;}
     display: inline-block;
     margin: 10px 5%;
     border-radius: 10px;
+    background: #fff;
 }
-
-
-
 
 @media screen and (max-width: 1110px){
     .contact-card{
@@ -197,6 +198,12 @@ hr{background: #000;}
     .copy-text{display: inline;}
     .footer{
         top: 170%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container_img img{
+        width: 20%;
     }
 }
 
