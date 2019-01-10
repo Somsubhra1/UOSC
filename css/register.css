@@ -1,41 +1,48 @@
 body {
-    background: #dae2f8; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #d6a4a4,
-      #dae2f8
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #d6a4a4,
-      #dae2f8
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: #757F9A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #414345,
+    #232526
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.list-item {
+  text-decoration: none;
+}
+.list-item:hover {
+  color: #fff;
+  text-decoration: none;
+}
+#registrationForm > button {
+  display: flex;
+}
+hr {
+  background-color: #fff;
+}
+.alert {
+  display: none;
+}
+.head {
+  margin-top: 7rem;
+  font-size: 4.4rem;
+  font-family: "Francois One", sans-serif;
+  color: #fff;
+}
+.jumbotron {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#member4,
+#member5 {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
   }
-  
-  #registrationForm > button {
-    display: flex;
-  }
-  .alert {
-    display: none;
-  }
-  .head {
-    margin-top: 7rem;
-    font-size: 3.4rem;
-  }
-  .jumbotron {
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  #member4,
-  #member5 {
-    display: none;
-  }
-  @media screen and (max-width: 600px) {
-    .container {
-      width: 90%;
-    }
-  }
+}
