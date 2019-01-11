@@ -67,11 +67,15 @@ hr {
 .form-group > select {
   border: none;
   background-color: #f7f7f7;
+  font-size: 1.3rem;
 }
 .form-control:focus {
   border: none;
   box-shadow: none;
   background-color: #f7f7f7;
+}
+select {
+  cursor: pointer;
 }
 #member1,
 #member2,
