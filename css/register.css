@@ -1,3 +1,20 @@
+@keyframes btnAnimation{
+    0%{
+        }
+    25%{
+        transform: translateX(6px);
+        }
+    50%{
+        transform: translateX(6px);
+        }
+    75%{
+        transform: translateX(6px);
+        }
+    100%{
+        transform: rotate(xx) translateX(6px);
+        }
+}
+
 body {
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -62,6 +79,16 @@ hr {
 #member4,
 #member5 {
   display: none;
+}
+.fa-arrow-circle-right {
+  padding: 5px;
+}
+button:hover .fa-arrow-circle-right {
+    animation: btnAnimation 2s normal 0s linear;
+}
+.btn-primary:hover {
+  background-color: #04AC60;
+  border-color: #04AC60;
 }
 @media screen and (max-width: 600px) {
   .container {
