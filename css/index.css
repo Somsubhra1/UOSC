@@ -1,284 +1,340 @@
-html,body{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: #d6d6d6;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #d6d6d6;
 }
 
-.container-main{
-    width: 100%;
-    height: 100%;
-    margin:0;
-    padding: 0;
-    position: relative;
-    background: #000;
+.container-main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: #000;
+}
+#scene {
+  margin: 0;
+  width: 115%;
+  height: 120vh;
+  overflow: hidden;
+}
+.parallax {
+  position: absolute;
+}
+#warpbg {
+  top: -200px;
+  left: -350px;
+}
+#star1 {
+  top: 150px;
+  right: 200px;
+}
+#star2 {
+  top: 220px;
+  right: 500px;
+}
+#star3 {
+  bottom: 20px;
+  right: 20px;
+}
+#star4 {
+  top: 40px;
+  left: 290px;
+}
+#star5 {
+  bottom: 138px;
+  left: 170px;
+}
+#planet {
+  top: -103px;
+  left: -103px;
+}
+#robot {
+  top: 200px;
+  right: 250px;
+}
+#astronaut {
+  top: 220px;
+  right: 100px;
+}
+#asteroid {
+  bottom: 10px;
+  right: 10px;
+}
+.swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #0575e6;
 }
 
-.swiper-container{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: #0575E6;
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.swiper-wrapper, .swiper-slide{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+span,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-span,p{
-    margin: 0;
-    padding: 0;
+.diff,
+.first-letter {
+  /* color: rgb(15, 79, 139); */
+  color: #4facfe;
+
 }
 
-.diff, .first-letter{
-    color: rgb(15, 79, 139);
+.slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.slide{
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#slide-1{
-    background: #4facfe;
+#slide-1 {
+  background-image: url("../assets/img/warpbg.png");
+  /*background: #4facfe;
     background: -webkit-linear-gradient(to right, #4facfe 0%, #00f2fe 100%);  
-    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); 
-
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
 }
 
-#slide-2{
-    background-image: url('../assets/img/coding_bg.jpeg');
+#slide-2 {
+  background-image: url("../assets/img/coding_bg.jpeg");
 }
 
-#slide-3{
-    background-image: url('../assets/img/model_making_bg.jpg');
+#slide-3 {
+  background-image: url("../assets/img/model_making_bg.jpg");
 }
 
-#slide-4{
-    background-image: url('../assets/img/quiz_bg.jpeg');
+#slide-4 {
+  background-image: url("../assets/img/quiz_bg.jpeg");
 }
 
-#slide-5{
-    margin-top:0;
-    top:0;
-    background: #0575E6;
-    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-    background: linear-gradient(to right, #021B79, #0575E6); 
+#slide-5 {
+  margin-top: 0;
+  top: 0;
+  background: #0575e6;
+  background: -webkit-linear-gradient(to right, #021b79, #0575e6);
+  background: linear-gradient(to right, #021b79, #0575e6);
 }
 
-.slider-content-1{
-    width: 80%;
-    padding: 10px;
-    color: #fff;
-    position: relative;
-    top: 35%;
-    left: 10%;
+.slider-content-1 {
+  width: 80%;
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  top: 35%;
+  left: 10%;
+  z-index: 1;
 }
 
-.slider-content-1 span{
-    text-align: center;
-    font-size: 4.5rem;
-    font-family: Arial, Helvetica, sans-serif;
+.slider-content-1 span {
+  text-align: center;
+  font-size: 4.5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.slider-content-1 p{
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 28px;
+.slider-content-1 p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 28px;
 }
 
-.slider-content{
-    width: 40%;
-    padding: 10px;
-    /* background: #000; */
-    position: relative;
-    top: 25%;
-    left: 10%;
-    color: #fff;
+.slider-content {
+  width: 40%;
+  padding: 10px;
+  /* background: #000; */
+  position: relative;
+  top: 25%;
+  left: 10%;
+  color: #fff;
 }
 
-.slider-content span{
-    font-size: 3rem;
-    text-align: left;
+.slider-content span {
+  font-size: 3rem;
+  text-align: left;
 }
 
-.slider-content p{
-    margin-top: 1rem;
+.slider-content p {
+  margin-top: 1rem;
 }
 
-.slider-content-5{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.slider-content-5 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.what-next{
-    display: inline-block;
-    width: 100%;
-    margin-top: 5%;
-    text-align: center;
-    font-size: 3.5rem;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;      
+.what-next {
+  display: inline-block;
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
-.register-div{
-    position:absolute;
-    top:30%;
-    left:12.5%;
-    width:30%;
-    padding: 2.5%;
-    box-shadow: #000 1px 1px 10px;
-    height: 30%;
-    background: #fff;
-    border-radius: 10px;
+.register-div {
+  position: absolute;
+  top: 30%;
+  left: 12.5%;
+  width: 30%;
+  padding: 2.5%;
+  box-shadow: #000 1px 1px 10px;
+  height: 30%;
+  background: #fff;
+  border-radius: 10px;
 }
 
-.gallery-div{
-    position:absolute;
-    top:45%;
-    left:52.5%;
-    width:30%;
-    padding: 2.5%;
-    height: 30%;
-    box-shadow: #000 1px 1px 10px;
-    background: #fff;
-    border-radius: 10px;
+.gallery-div {
+  position: absolute;
+  top: 45%;
+  left: 52.5%;
+  width: 30%;
+  padding: 2.5%;
+  height: 30%;
+  box-shadow: #000 1px 1px 10px;
+  background: #fff;
+  border-radius: 10px;
 }
 
-.register-div .container, .gallery-div .container{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+.register-div .container,
+.gallery-div .container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.register-div .container span, .gallery-div .container span{
-    display: inline-block;
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 550;
-    margin-bottom: 20px;
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: left;
+.register-div .container span,
+.gallery-div .container span {
+  display: inline-block;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  margin-bottom: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: left;
 }
 
-.register-div .container a, .gallery-div .container a{
-    display:inline-block;
-    position: absolute;
-    bottom:0;
-    left:0;
-    padding: 3% 10%;
-    background: rgb(13, 69, 160);
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 8px;
+.register-div .container a,
+.gallery-div .container a {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3% 10%;
+  background: rgb(13, 69, 160);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 8px;
 }
 
-.register-div .container a:hover, .gallery-div .container a:hover{
-    background: rgb(2, 25, 128);
+.register-div .container a:hover,
+.gallery-div .container a:hover {
+  background: rgb(2, 25, 128);
 }
 
-.ps_btn{
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 12px;
-    border-radius: 8px;
-    background: rgb(11, 128, 196);
-    text-decoration: none;
-    color: #fff;
+.ps_btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgb(11, 128, 196);
+  text-decoration: none;
+  color: #fff;
 }
 
-.ps_btn:hover{
-    background: #0575E6;
-    background: -webkit-linear-gradient(to right, #021B79, #0575E6);
-    background: linear-gradient(to right, #021B79, #0575E6);
+.ps_btn:hover {
+  background: #0575e6;
+  background: -webkit-linear-gradient(to right, #021b79, #0575e6);
+  background: linear-gradient(to right, #021b79, #0575e6);
 }
-
-
-
-
 
 /* Media Queries */
 
 /* @media screen and (max-width:) */
 
-@media screen and (max-width:1050px){
-    .what-next{
-        margin-top: 10%;
-    }
+@media screen and (max-width: 1050px) {
+  .what-next {
+    margin-top: 10%;
+  }
 }
 
-@media screen and (max-width:769px){
-    
-    .register-div, .gallery-div{
-        width: 75%;
-        height: 27%;
-        left: 12.5%;
-        font-size: 14px;
-    }
+@media screen and (max-width: 769px) {
+  .register-div,
+  .gallery-div {
+    width: 75%;
+    height: 27%;
+    left: 12.5%;
+    font-size: 14px;
+  }
 
-    .register-div{top:30%;}
+  .register-div {
+    top: 30%;
+  }
 
-    .gallery-div{
-        top: 63%;
-    }
+  .gallery-div {
+    top: 63%;
+  }
 
-    .slider-content{
-        left: 15%;
-        top: 20%;
-        width: 50%;
-    }
-    
-    .slider-content span{
-        font-size: 3rem;
-    }
-    
+  .slider-content {
+    left: 15%;
+    top: 20%;
+    width: 50%;
+  }
+
+  .slider-content span {
+    font-size: 3rem;
+  }
 }
 
-@media screen and (max-width:600px){
-    .what-next{
-        margin-top: 20%;
-        font-size: 2.6rem;
-    }
-    .slider-content p{
-        font-size: 14px;
-    }
-    .slider-content-1 {
-        top: 18%;
-    }
+@media screen and (max-width: 600px) {
+  .what-next {
+    margin-top: 20%;
+    font-size: 2.6rem;
+  }
+  .slider-content p {
+    font-size: 14px;
+  }
+  .slider-content-1 {
+    top: 18%;
+  }
 }
 
-@media screen and (max-width: 390px){
-    .gallery-div, .register-div{
-        font-size: 12px;
-    }
-    .slider-content-1 span{
-        font-size: 3.3rem;
-    }
+@media screen and (max-width: 390px) {
+  .gallery-div,
+  .register-div {
+    font-size: 12px;
+  }
+  .slider-content-1 span {
+    font-size: 3.3rem;
+  }
 }
 
-@media screen and (max-width: 340px){
-
-    .slider-content-1 span{
-        font-size: 3rem;
-    }
+@media screen and (max-width: 340px) {
+  .slider-content-1 span {
+    font-size: 3rem;
+  }
 }
