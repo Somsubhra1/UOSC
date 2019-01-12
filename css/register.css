@@ -1,3 +1,20 @@
+@keyframes btnAnimation{
+    0%{
+        }
+    25%{
+        transform: translateX(6px);
+        }
+    50%{
+        transform: translateX(6px);
+        }
+    75%{
+        transform: translateX(6px);
+        }
+    100%{
+        transform: rotate(xx) translateX(6px);
+        }
+}
+
 body {
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -20,6 +37,7 @@ body {
 }
 #registrationForm > button {
   display: flex;
+  border-radius: 20px;
 }
 hr {
   background-color: #fff;
@@ -34,16 +52,47 @@ hr {
   color: #fff;
 }
 .jumbotron {
-  padding-top: 40px;
+  padding: 0 35px;
+  padding-top: 50px;
   padding-bottom: 30px;
   border-radius: 4.5rem;
+  background-color: #fff;
 }
-.form-group > input {
+.form-group {
+  background-color: #f7f7f7;
+  padding: 15px;
   border-radius: 20px;
 }
+.form-group > input,
+.form-group > select {
+  border: none;
+  background-color: #f7f7f7;
+  font-size: 1.3rem;
+}
+.form-control:focus {
+  border: none;
+  box-shadow: none;
+  background-color: #f7f7f7;
+}
+select {
+  cursor: pointer;
+}
+#member1,
+#member2,
+#member3,
 #member4,
 #member5 {
   display: none;
+}
+.fa-arrow-circle-right {
+  padding: 5px;
+}
+button:hover .fa-arrow-circle-right {
+    animation: btnAnimation 2s normal 0s linear;
+}
+.btn-primary:hover {
+  background-color: #04AC60;
+  border-color: #04AC60;
 }
 @media screen and (max-width: 600px) {
   .container {
