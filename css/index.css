@@ -346,10 +346,11 @@ p {
 
   .register-div {
     top: 30%;
+    height: 32%;
   }
 
   .gallery-div {
-    top: 63%;
+    top: 68%;
   }
 
   .slider-content {
