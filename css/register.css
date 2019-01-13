@@ -107,6 +107,7 @@ select {
 }
 .btn-primary {
   font-family: Montserrat-Medium;
+  background: #2E2B6D;
   /* width: 20%; */
 }
 .btn-primary:hover {
