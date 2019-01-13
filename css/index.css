@@ -250,7 +250,7 @@ p {
   left: 52.5%;
   width: 30%;
   padding: 2.5%;
-  height: 30%;
+  height: 25%;
   box-shadow: #000 1px 1px 10px;
   background: #fff;
   border-radius: 10px;
@@ -277,6 +277,7 @@ p {
   top: 0;
   left: 0;
   text-align: left;
+  left: 37.5%;
 }
 
 .register-div .container a,
@@ -351,6 +352,7 @@ p {
 
   .gallery-div {
     top: 68%;
+    height: 22%;
   }
 
   .slider-content {
