@@ -41,7 +41,7 @@ html, body{
     position: absolute;
     top:12%;
     width: 80%;
-    height: 100%;
+    height: 78%;
     margin: 0 10% 2% 10%;
 }
 
@@ -55,7 +55,7 @@ hr{background: #000;}
 .contact-card{
     display: inline-block;
     width: 40%;
-    height: 70%;
+    height: 90%;
     margin: 3% 4.5%;
     padding: 0;
     border-radius: 12px;
@@ -187,7 +187,7 @@ hr{background: #000;}
 
 .footer{
     width: 80%;
-    height: 20%;
+    height: 12%;
     position: absolute;
     top: 99%; 
     left: 12%;
@@ -199,18 +199,19 @@ hr{background: #000;}
 
 .container_img{
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin: 0;
     text-align: center;
 }
 
 .container_img img{
     width: 10%;
-    height: 60%;
+    height: 80%;
     display: inline-block;
     margin: 10px 5%;
+    margin-bottom: 0px;
     border-radius: 10px;
-    background: #000;
+    /* background: #000; */
 }
 
 @media screen and (max-width: 1110px){

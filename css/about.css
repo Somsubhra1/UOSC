@@ -55,17 +55,18 @@ p{
 
 .footer{
     width: 80%;
-    height: 20%;
-    /* background: rgb(16, 92, 180); */
+    height: 12%;
+    margin: 0;
+    margin-left: 12%;
     background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
-    margin-left: 12%;
+
     padding: 0;
 }
 
 .container_img{
     width: 100%;
-    height: 70%;
+    height: 100%;
     margin: 0;
     text-align: center;
 }
@@ -75,7 +76,9 @@ p{
     height: 80%;
     display: inline-block;
     margin: 10px 5%;
+    margin-bottom: 0px;
     border-radius: 10px;
+    /* background: #000; */
 }
 
 .sm_icons{
