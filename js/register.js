@@ -4,8 +4,12 @@ var member3 = document.getElementById('member3');
 var member4 = document.getElementById('member4');
 var member5 = document.getElementById('member5');
 
-// event listener
+// Adding pseudo element to styles dynamically
+var dynamicCSS = document.createElement("style");
+dynamicCSS.innerHTML = '.true-validate::after {content: "✓";  }';
+document.head.appendChild(dynamicCSS);
 
+// event listener
 document.getElementById("registrationForm").addEventListener('submit', submitted);
 
 function eventSelected(event) {
@@ -83,6 +87,8 @@ function submitted(event) {
         document.getElementById("alertSuccess").style.display = 'none';        
     }, 3000);
     // form reset
-    document.getElementById("registrationForm").reset()
+    document.getElementById("registrationForm").reset();
+    // Remove pseudo CSS
+    dynamicCSS.innerHTML = dynamicCSS.innerHTML.replace(/content: "✓";/, 'content: ""');
     
 }

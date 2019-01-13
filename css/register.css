@@ -1,18 +1,26 @@
-@keyframes btnAnimation{
-    0%{
-        }
-    25%{
-        transform: translateX(6px);
-        }
-    50%{
-        transform: translateX(6px);
-        }
-    75%{
-        transform: translateX(6px);
-        }
-    100%{
-        transform: rotate(xx) translateX(6px);
-        }
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../assets/fonts/montserrat/Montserrat-Regular.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fonts/montserrat/Montserrat-Bold.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(../assets/fonts/montserrat/Montserrat-Black.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../assets/fonts/montserrat/Montserrat-SemiBold.ttf)
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../assets/fonts/montserrat/Montserrat-Medium.ttf)
 }
 
 body {
@@ -44,11 +52,13 @@ hr {
 }
 .alert {
   display: none;
+  border-radius: 20px;
 }
 .head {
   margin-top: 7rem;
   font-size: 4.1rem;
   font-family: "Francois One", sans-serif;
+  font-family: Montserrat-Black;
   color: #fff;
 }
 .jumbotron {
@@ -63,11 +73,18 @@ hr {
   padding: 15px;
   border-radius: 20px;
 }
+h5 {
+  font-family: Montserrat-SemiBold;
+}
+.form-group > label {
+  font-family: Montserrat-SemiBold;
+}
 .form-group > input,
 .form-group > select {
   border: none;
   background-color: #f7f7f7;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-family: Montserrat-SemiBold;
 }
 .form-control:focus {
   border: none;
@@ -82,20 +99,27 @@ select {
 #member3,
 #member4,
 #member5 {
+  width: 100%;
   display: none;
 }
 .fa-arrow-circle-right {
   padding: 5px;
 }
-button:hover .fa-arrow-circle-right {
-    animation: btnAnimation 2s normal 0s linear;
+.btn-primary {
+  font-family: Montserrat-Medium;
+  /* width: 20%; */
 }
 .btn-primary:hover {
   background-color: #04AC60;
   border-color: #04AC60;
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .container {
     width: 90%;
+  }
+  .form-group > input,
+  .form-group > select {
+  font-size: 1.0rem;
   }
 }

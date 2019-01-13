@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Register</title>
+    <title>UOSC | REGISTER</title>
     <!--  meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous">
+    <!-- Form CSS -->
+    <link rel="stylesheet" href="../css/form.css">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
-    />
-    <!-- <link rel="stylesheet" href="../css/test.css"> -->
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous">
+    />    
       <!-- Google Fonts CSS -->
       <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
       <!-- Animate CSS -->
@@ -44,7 +44,7 @@
         <a href="../index.html" class="list-item">HOME</a>
         <a href="./about.html" class="list-item">ABOUT</a>
         <a href="./register.html" class="list-item">REGISTER</a>
-        <a href="" class="list-item">Gallery</a>
+        <a href="" class="list-item">GALLERY</a>
         <a href="./contact.html" class="list-item">CONTACT</a>
       </div>
     </div>
@@ -58,18 +58,19 @@
       <h5>Details submitted successfully</h5>
       </div>
       <!-- Start of form -->
-      <form method="POST" id="registrationForm">
-        <div class="form-group">
-          <label>Team Name</label>
-          <input type="text" name="team" class="form-control" id="teamName" placeholder="Enter your Team Name" required>
+      <form method="POST" id="registrationForm" class="contact100-form validate-form">
+          <h5 class="mb-4 ml-2">Basic Details&#58;</h5>
+        <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Team Name">
+          <label class="label-input100">Team Name</label>
+          <input type="text" name="team" class="form-control input100" id="teamName" placeholder="Enter your Team Name" required>
         </div>
-        <div class="form-group">
-          <label>School Name</label>
-          <input type="text" name="school" class="form-control" id="schoolName" placeholder="Enter your School Name" required>
+        <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter School Name">
+          <label class="label-input100">School Name</label>
+          <input type="text" name="school" class="form-control input100" id="schoolName" placeholder="Enter your School Name" required>
         </div>
-        <div class="form-group">
-          <label>Select Event</label>
-          <select class="form-control" id="events" onchange="eventSelected(this)" >
+        <div class="form-group wrap-input100 validate-input bg1">
+          <label class="label-input100">Select Event</label>
+          <select name="eventSelector" class="form-control js-select2 select2-hidden-accessible" tabindex="-1" aria-hidden="true" id="events" onchange="eventSelected(this)" >
             <option value="ps">Please Select</option>
             <option value="coding">Coding &#40;3 Members&#41;</option>
             <option value="quiz">UrecQuiz &#40;3 Members&#41;</option>
@@ -78,80 +79,80 @@
         </div>
         <div id="member1" class="mt-4">
           <h5>Member 1 &#40;Team Leader&#41; Details&#58;</h5>
-          <div class="form-group mt-3">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" id="member1-name" placeholder="Enter your name" required>
+          <div class="form-group mt-3 wrap-input100 validate-input bg1" data-validate="Please Enter Member 1's Name">
+            <label class="label-input100">Name</label>
+            <input type="text" name="name" class="form-control input100" id="member1-name" placeholder="Enter your name" required>
           </div>
-          <div class="form-group">
-            <label>Class</label>
-            <input type="text" name="class" class="form-control" id="member1-class" placeholder="Enter your class" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 1's Class">
+            <label class="label-input100">Class</label>
+            <input type="text" name="class" class="form-control input100" id="member1-class" placeholder="Enter your class" required>
           </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="text" name="contactnumber" class="form-control" id="member1-contact" placeholder="Enter your contact number" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 1's Contact Number">
+            <label class="label-input100">Contact Number</label>
+            <input type="text" name="contactnumber" class="form-control input100" id="member1-contact" placeholder="Enter your contact number" required>
           </div>
         </div>
         <div id="member2" class="mt-4">
         <h5>Member 2 Details&#58;</h5>
-          <div class="form-group mt-3">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" id="member2-name" placeholder="Enter your name" required>
+          <div class="form-group mt-3 wrap-input100 validate-input bg1" data-validate="Please Enter Member 2's Name">
+            <label class="label-input100">Name</label>
+            <input type="text" name="name" class="form-control input100" id="member2-name" placeholder="Enter your name" required>
           </div>
-          <div class="form-group">
-            <label>Class</label>
-            <input type="text" name="class" class="form-control" id="member2-class" placeholder="Enter your class" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 2's Class">
+            <label class="label-input100">Class</label>
+            <input type="text" name="class" class="form-control input100" id="member2-class" placeholder="Enter your class" required>
           </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="text" name="contactnumber" class="form-control" id="member2-contact" placeholder="Enter your contact number" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 2's Contact Number">
+            <label class="label-input100">Contact Number</label>
+            <input type="text" name="contactnumber" class="form-control input100" id="member2-contact" placeholder="Enter your contact number" required>
           </div>
         </div>
         <div id="member3" class="mt-4">
           <h5>Member 3 Details&#58;</h5>
-          <div class="form-group mt-3">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" id="member3-name" placeholder="Enter your name" required>
+          <div class="form-group mt-3 wrap-input100 validate-input bg1" data-validate="Please Enter Member 3's Name">
+            <label class="label-input100">Name</label>
+            <input type="text" name="name" class="form-control input100" id="member3-name" placeholder="Enter your name" required>
           </div>
-          <div class="form-group">
-            <label>Class</label>
-            <input type="text" name="class" class="form-control" id="member3-class" placeholder="Enter your class" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 3's Class">
+            <label class="label-input100">Class</label>
+            <input type="text" name="class" class="form-control input100" id="member3-class" placeholder="Enter your class" required>
           </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="text" name="contactnumber" class="form-control" id="member3-contact" placeholder="Enter your contact number" required>
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 3's Contact Number">
+            <label class="label-input100">Contact Number</label>
+            <input type="text" name="contactnumber" class="form-control input100" id="member3-contact" placeholder="Enter your contact number" required>
           </div>
         </div>
         <div id="member4" class="mt-4">
           <h5>Member 4 Details&#58;</h5>
-          <div class="form-group mt-3">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" id="member4-name" placeholder="Enter your name">
+          <div class="form-group mt-3 wrap-input100 validate-input bg1" data-validate="Please Enter Member 4's Name">
+            <label class="label-input100">Name</label>
+            <input type="text" name="name" class="form-control input100" id="member4-name" placeholder="Enter your name">
           </div>
-          <div class="form-group">
-            <label>Class</label>
-            <input type="text" name="class" class="form-control" id="member4-class" placeholder="Enter your class">
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 4's Class">
+            <label class="label-input100">Class</label>
+            <input type="text" name="class" class="form-control input100" id="member4-class" placeholder="Enter your class">
           </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="text" name="contactnumber" class="form-control" id="member4-contact" placeholder="Enter your contact number">
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 4's Contact Number">
+            <label class="label-input100">Contact Number</label>
+            <input type="text" name="contactnumber" class="form-control input100" id="member4-contact" placeholder="Enter your contact number">
           </div>
         </div>
         <div id="member5" class="mt-4">
           <h5>Member 5 Details&#58;</h5>
-          <div class="form-group mt-3">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" id="member5-name" placeholder="Enter your name" >
+          <div class="form-group mt-3 wrap-input100 validate-input bg1" data-validate="Please Enter Member 5's Name">
+            <label class="label-input100">Name</label>
+            <input type="text" name="name" class="form-control input100" id="member5-name" placeholder="Enter your name" >
           </div>
-          <div class="form-group">
-            <label>Class</label>
-            <input type="text" name="class" class="form-control" id="member5-class" placeholder="Enter your class" >
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 5's Class">
+            <label class="label-input100">Class</label>
+            <input type="text" name="class" class="form-control input100" id="member5-class" placeholder="Enter your class" >
           </div>
-          <div class="form-group">
-            <label>Contact Number</label>
-            <input type="text" name="contactnumber" class="form-control" id="member5-contact" placeholder="Enter your contact number" >
+          <div class="form-group wrap-input100 validate-input bg1" data-validate="Please Enter Member 5's Contact Number">
+            <label class="label-input100">Contact Number</label>
+            <input type="text" name="contactnumber" class="form-control input100" id="member5-contact" placeholder="Enter your contact number" >
           </div>
         </div>
-        <button type="submit" class="mt-4 btn btn-primary btn-lg text-center mx-auto">Submit <i class="fas fa-arrow-circle-right"></i></button>
+        <button type="submit" class="mt-4 btn btn-primary btn-lg text-center mx-auto contact100-form-btn">Submit <i class="fas fa-arrow-circle-right"></i></button>
       </form> 
       <!-- End of Form -->
       </div>
@@ -163,9 +164,6 @@
           <a href="http://iem.edu.in/"><img src="../assets/img/logos/iem.png" alt="" class="logo_iem"></a>
         </div>
       </footer>
-
-
-
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -185,6 +183,8 @@
     ></script>
     <!-- Navbar script -->
     <script src="../js/navbar.js"></script>
+    <!-- form Validation script -->
+    <script src="../js/validate.js"></script>    
     <!-- Registration script -->
     <script src="../js/register.js"></script>
   </body>
