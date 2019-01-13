@@ -43,7 +43,7 @@ p{
 
 }
 
-.about-us-card{
+/* .about-us-card{
     position: absolute;
     top: 15%;
     left: 13%;
@@ -92,3 +92,126 @@ p{
     }
 }
 
+ */
+.about-us-card{
+    margin-top: 6%;
+    margin-left: 15%;
+    width: 70%;
+    padding: 16px;
+    border-radius: 12px;
+    background: #fff;
+    margin-bottom: 2%;
+}
+
+.footer{
+    width: 80%;
+    height: 20%;
+    background: rgb(16, 92, 180);
+    border-radius: 12px 12px 0px 0px;
+    margin-left: 10%;
+    padding: 0;
+}
+
+.container_img{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+    
+    text-align: center;
+}
+
+.container_img img{
+    width: 10%;
+    height: 80%;
+    display: inline-block;
+    margin: 10px 5%;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.sm_icons{
+    position: fixed;
+    z-index: 1;
+    top: 20%;
+    left: -8%;
+    width:8%;
+    height: 60%;
+    border-radius: 0px 8px 12px 0px;
+    animation: slide-in-left 300ms;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;;
+}
+
+@keyframes slide-in-left{
+    from{
+        left:-8%;
+    }
+    to{left:0%;}
+}
+
+#sm_icon{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 0rem;
+    margin-top: 30%;
+    animation: scale-up 300ms;
+    animation-delay: 1300ms;
+    animation-fill-mode: forwards;
+    opacity: 0.9;
+}
+
+#sm_icon:hover{opacity: 1;}
+
+
+#sm_icon:first-child{
+    color: #3C5A99;
+}
+#sm_icon:nth-child(2){
+    color: #d6249f;
+}
+#sm_icon:nth-child(3){
+    color: #4875B4;
+}
+#sm_icon:nth-child(4){
+    color: #FF3333;
+}
+
+
+@keyframes scale-up{
+    from{font-size: 0rem;}
+    to{font-size: 3rem;}
+}
+
+@media screen and (max-width: 1115px){
+    .container_img img{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about-us-card{
+        margin-top: 13%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .sm_icons{
+        width: 12%;
+        left: -12%;
+    }
+    #sm_icon{
+        font-size: 0rem;
+    }
+    @keyframes scale-up{
+        from{font-size: 0rem;}
+        to{font-size: 2rem;}
+    }
+    .about-us-card{
+        margin-top: 20%;
+    }
+    @keyframes slide-in-left{
+        from{left:-12%;}
+        to{left:0%;}
+    }
+}
