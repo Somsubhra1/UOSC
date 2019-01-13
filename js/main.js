@@ -10,18 +10,19 @@ var swiper = new Swiper('.swiper-container', {
 });
   
 $(window).parallaxmouse({
-  invert: true,
-  range: 400,
+  invert: false,
+  range: 200,
   elms: [
-    { el: $('#warpbg'), rate: 0.1 },
+    { el: $('#warpbg'), rate: 0.5 },
     { el: $('#star1'), rate: 0.2 },
     { el: $('#star2'), rate: 0.2 },
     { el: $('#star3'), rate: 0.2 },
     { el: $('#star4'), rate: 0.2 },
     { el: $('#star5'), rate: 0.2 },
-    { el: $('#planet'), rate: 0.3 },
-    { el: $('#robot'), rate: 0.4 },
-    { el: $('#astronaut'), rate: 0.48 },
-    { el: $('#asteroid'), rate: 0.7 }
+    { el: $('#star6'), rate: 0.2 },
+    { el: $('#planet'), rate: 0.2 },
+    { el: $('#robot'), rate: 0.2 },
+    { el: $('#astronaut'), rate: 0.2 },
+    { el: $('#asteroid'), rate: 0.2 }
   ]
 });
