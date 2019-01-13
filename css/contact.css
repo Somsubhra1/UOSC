@@ -83,13 +83,13 @@ hr{background: #000;}
     height: 102%;
     overflow: hidden;
     border-radius: 12px 12px 0px 0px;
-    /* background: #0575E6; 
-     background: -webkit-linear-gradient(to left, #021B79, #0575E6);
-     background: linear-gradient(to left, #021B79, #0575E6); */
+    background: #0575E6; 
+     background-image: -webkit-linear-gradient(to left, #021B79, #0575E6);
+     background-image: linear-gradient(to left, #021B79, #0575E6);
 
-    background: #bdc3c7;   
+/*     background: #bdc3c7;   
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);  */
 }
 
 .contact-img{
