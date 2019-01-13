@@ -317,6 +317,9 @@ p {
   background: -webkit-linear-gradient(to right, #021b79, #0575e6);
   background: linear-gradient(to right, #021b79, #0575e6);
 }
+.register-btn {
+  margin-left: 20px;
+}
 
 /* Media Queries */
 
@@ -325,6 +328,9 @@ p {
 @media screen and (max-width: 1050px) {
   .what-next {
     margin-top: 10%;
+  }
+  .register-btn {
+    margin-left: 0px;
   }
 }
 
