@@ -41,7 +41,7 @@ html, body{
     position: absolute;
     top:12%;
     width: 80%;
-    height: 100%;
+    height: 78%;
     margin: 0 10% 2% 10%;
 }
 
@@ -55,7 +55,7 @@ hr{background: #000;}
 .contact-card{
     display: inline-block;
     width: 40%;
-    height: 70%;
+    height: 90%;
     margin: 3% 4.5%;
     padding: 0;
     border-radius: 12px;
@@ -187,10 +187,11 @@ hr{background: #000;}
 
 .footer{
     width: 80%;
-    height: 20%;
-    position: absolute;
+    height: 12%;
+    position: relative;
     top: 99%; 
-    left: 12%;
+    left: 10%;
+    /* background: rgb(16, 92, 180); */
     background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
     margin: 0;
@@ -201,7 +202,6 @@ hr{background: #000;}
     width: 100%;
     height: 70%;
     margin: 0;
-    
     text-align: center;
 }
 
