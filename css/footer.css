@@ -27,7 +27,7 @@
     background: #fff;
 }
 
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1115px){
     .contact-card{
         width: 100%;
         margin: 3% 0%;
@@ -35,5 +35,8 @@
     .copy-text{display: inline;}
     .footer{
         top: 170%;
+    }
+    .container_img img{
+        width: 20%;
     }
 }
