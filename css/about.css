@@ -54,7 +54,7 @@ p{
 }
 .footer{
     width: 80%;
-    height: 12%;
+    /* height: 12%; */
     background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
     margin: 0;
