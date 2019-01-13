@@ -52,13 +52,12 @@ p{
     background: #fff;
     margin-bottom: 2%;
 }
-
 .footer{
     width: 80%;
-    height: 20%;
-    /* background: rgb(16, 92, 180); */
+    height: 12%;
     background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
+    margin: 0;
     margin-left: 12%;
     padding: 0;
 }
