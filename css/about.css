@@ -56,9 +56,10 @@ p{
 .footer{
     width: 80%;
     height: 20%;
-    background: rgb(16, 92, 180);
+    /* background: rgb(16, 92, 180); */
+    background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
-    margin-left: 10%;
+    margin-left: 12%;
     padding: 0;
 }
 
@@ -66,7 +67,6 @@ p{
     width: 100%;
     height: 70%;
     margin: 0;
-    
     text-align: center;
 }
 
@@ -76,7 +76,6 @@ p{
     display: inline-block;
     margin: 10px 5%;
     border-radius: 10px;
-    background: #fff;
 }
 
 .sm_icons{
@@ -124,6 +123,9 @@ p{
     color: #4875B4;
 }
 #sm_icon:nth-child(4){
+    color: #1dcaff;
+}
+#sm_icon:nth-child(5){
     color: #FF3333;
 }
 
@@ -132,6 +134,8 @@ p{
     from{font-size: 0rem;}
     to{font-size: 3rem;}
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 1115px){
     .container_img img{
@@ -147,21 +151,21 @@ p{
 
 @media screen and (max-width: 475px){
     .sm_icons{
-        width: 12%;
-        left: -12%;
+        width: 13%;
+        left: -13%;
     }
     #sm_icon{
         font-size: 0rem;
     }
     @keyframes scale-up{
         from{font-size: 0rem;}
-        to{font-size: 2rem;}
+        to{font-size: 2.5rem;}
     }
     .about-us-card{
         margin-top: 20%;
     }
     @keyframes slide-in-left{
-        from{left:-12%;}
+        from{left:-13%;}
         to{left:0%;}
     }
 }

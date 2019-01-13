@@ -55,23 +55,22 @@ hr{background: #000;}
 .contact-card{
     display: inline-block;
     width: 40%;
-    height: 60%;
+    height: 70%;
     margin: 3% 4.5%;
     padding: 0;
-    /* background: #000; */
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 2px 2px 20px #000;
+    /* box-shadow: 2px 2px 20px #000; */
     font-family: Montserrat-Medium;
-
 }
+
+.contact-card *{text-align: center;}
 
 .cc-container{
     width:100%;
     height: 100%;
     border-radius: 12px;
     position: relative;
-    /* background: grey; */
 }
 
 .cc-pic{
@@ -83,31 +82,27 @@ hr{background: #000;}
     height: 102%;
     overflow: hidden;
     border-radius: 12px 12px 0px 0px;
-    background: #0575E6; 
-     background-image: -webkit-linear-gradient(to left, #021B79, #0575E6);
-     background-image: linear-gradient(to left, #021B79, #0575E6);
-
-/*     background: #bdc3c7;   
-    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);  */
+    background: transparent;
+    /* background: rgb(47, 43, 109); */
 }
+
 
 .contact-img{
     width: 80%;
-    height: 60%;
-    margin-left: 10%;
+    height: 70%;
+    margin-left: 0%;
     margin-top: 10%;
-    border-radius: 5px;
+    border-radius: 500px;
 }
 
 .contact-name{
     width: 60%;
     margin-left: 20%;
     text-align: center;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    /* color: #fff; */
     font-family: Montserrat-SemiBold;
     font-weight: 550;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+    border-bottom: 1px solid rgba(0,0,0, 0.466);
 }
 
 .overlay{
@@ -195,8 +190,8 @@ hr{background: #000;}
     height: 20%;
     position: absolute;
     top: 99%; 
-    left: 10%;
-    background: rgb(16, 92, 180);
+    left: 12%;
+    background: rgb(47, 43, 109);
     border-radius: 12px 12px 0px 0px;
     margin: 0;
     padding: 0;
@@ -216,7 +211,6 @@ hr{background: #000;}
     display: inline-block;
     margin: 10px 5%;
     border-radius: 10px;
-    background: #fff;
 }
 
 @media screen and (max-width: 1110px){
