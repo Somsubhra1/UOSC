@@ -78,7 +78,6 @@ function eventSelected(event) {
 }
 
 function submitted(event) {
-    event.preventDefault();
     // display success alert for 3 seconds   
     document.getElementById("alertSuccess").style.display = 'block';
     window.scrollTo(0, document.body.scrollHeight);
@@ -86,8 +85,7 @@ function submitted(event) {
     setTimeout(() => {
         document.getElementById("alertSuccess").style.display = 'none';        
     }, 3000);
-    // form reset
-    document.getElementById("registrationForm").reset();
+    
     // Remove pseudo CSS
     dynamicCSS.innerHTML = dynamicCSS.innerHTML.replace(/content: "✓";/, 'content: ""');
     
