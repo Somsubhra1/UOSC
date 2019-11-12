@@ -334,6 +334,21 @@ p {
   .register-btn {
     margin-left: 0px;
   }
+  .register-div .container a, .gallery-div .container a {
+    font-size: 15px;
+  }
+  .register-div {
+    margin-top: -3em;
+  }
+  .gallery-div {
+    margin-top: -2em;
+  }
+  .register-card-btn {
+    margin-bottom: 1.5em;
+  }
+  .ps_btn {
+    left: 30%;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -354,6 +369,7 @@ p {
     top: 68%;
     height: 22%;
   }
+
 
   .slider-content {
     left: 15%;
@@ -382,7 +398,7 @@ p {
 @media screen and (max-width: 450px) {
   .gallery-div,
   .register-div {
-    font-size: 12px;
+    font-size: 10px;
   }
   .slider-content-1 span {
     font-size: 3.3rem;
